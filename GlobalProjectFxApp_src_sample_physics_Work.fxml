@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.physics.Work">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Exit" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane layoutX="1.0" prefHeight="99.0" prefWidth="630.0" style="-fx-background-color: #2E3348;">
+                    <children>
+                        <Label layoutX="256.0" layoutY="26.0" text="EzLess" textFill="#42e3ba">
+                            <font>
+                                <Font name="Bell MT" size="40.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <Button fx:id="back" layoutX="542.0" layoutY="14.0" mnemonicParsing="false" onAction="#initialize" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #42e3ba; -fx-border-color: silver; -fx-border-radius: 5;" text="Back" textFill="#2e3348">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <Label layoutX="189.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="·">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t" layoutX="196.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" promptText="t" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="43.0" layoutY="155.0" prefHeight="30.0" prefWidth="38.0" text="Q =">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="I" layoutX="78.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" promptText="I²" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <Label layoutX="130.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="·">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="R" layoutX="136.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" promptText="R" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="equals" layoutX="253.0" layoutY="155.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="=">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="answer" editable="false" layoutX="294.0" layoutY="155.0" prefHeight="32.0" prefWidth="175.0" promptText="Ответ" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="clean" layoutX="476.0" layoutY="155.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="Clean">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="43.0" layoutY="117.0" prefHeight="30.0" prefWidth="115.0" text="Q = I² · R · t">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="210.0" prefHeight="30.0" prefWidth="115.0" text="Q = U² : R · t">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="clean1" layoutX="481.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="Clean">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="answer1" editable="false" layoutX="299.0" layoutY="249.0" prefHeight="32.0" prefWidth="175.0" promptText="Ответ" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="equals1" layoutX="258.0" layoutY="249.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="=">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="R1" layoutX="141.0" layoutY="249.0" prefHeight="32.0" prefWidth="49.0" promptText="R" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="135.0" layoutY="254.0" prefHeight="18.0" prefWidth="5.0" text=":">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="U1" layoutX="83.0" layoutY="249.0" prefHeight="32.0" prefWidth="49.0" promptText="U²" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <Label layoutX="43.0" layoutY="249.0" prefHeight="30.0" prefWidth="38.0" text="Q =">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t1" layoutX="201.0" layoutY="249.0" prefHeight="32.0" prefWidth="49.0" promptText="t" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="194.0" layoutY="254.0" prefHeight="18.0" prefWidth="5.0" text="·">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

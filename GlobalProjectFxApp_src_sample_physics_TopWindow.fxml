@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.physics.TopWindow">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Exit" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane layoutX="1.0" prefHeight="99.0" prefWidth="630.0" style="-fx-background-color: #2E3348;">
+                    <children>
+                        <Label layoutX="256.0" layoutY="26.0" text="EzLess" textFill="#42e3ba">
+                            <font>
+                                <Font name="Bell MT" size="40.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <Button fx:id="button1" layoutX="48.0" layoutY="116.0" mnemonicParsing="false" onAction="#initialize" prefHeight="39.0" prefWidth="235.0" style="-fx-background-color: #2E3348;" text="Удельная теплоемкость" textFill="#42e3ba">
+                    <font>
+                        <Font name="Century" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="button2" layoutX="48.0" layoutY="174.0" mnemonicParsing="false" onAction="#initialize" prefHeight="39.0" prefWidth="235.0" style="-fx-background-color: #2E3348;" text="Удельная теплота плавления" textFill="#42e3ba">
+                    <font>
+                        <Font name="Century" size="15.0" />
+                    </font>
+                </Button>
+            <Button fx:id="back" layoutX="542.0" layoutY="14.0" mnemonicParsing="false" onAction="#initialize" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #42e3ba; -fx-border-color: silver; -fx-border-radius: 5;" text="Back" textFill="#2e3348">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button3" layoutX="48.0" layoutY="232.0" mnemonicParsing="false" onAction="#initialize" prefHeight="39.0" prefWidth="235.0" style="-fx-background-color: #2E3348;" text="Расчет сопротивления проводника" textFill="#42e3ba">
+               <font>
+                  <Font name="Century" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="button4" layoutX="48.0" layoutY="290.0" mnemonicParsing="false" onAction="#initialize" prefHeight="39.0" prefWidth="235.0" style="-fx-background-color: #2E3348;" text="Расчет КПД" textFill="#42e3ba">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="button5" layoutX="338.0" layoutY="116.0" mnemonicParsing="false" onAction="#initialize" prefHeight="39.0" prefWidth="235.0" style="-fx-background-color: #2E3348;" text="Закон Ома" textFill="#42e3ba">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button6" layoutX="338.0" layoutY="174.0" mnemonicParsing="false" onAction="#initialize" prefHeight="39.0" prefWidth="235.0" style="-fx-background-color: #2E3348;" text="Сопротивление проводников" textFill="#42e3ba">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button7" layoutX="338.0" layoutY="232.0" mnemonicParsing="false" onAction="#initialize" prefHeight="39.0" prefWidth="235.0" style="-fx-background-color: #2E3348;" text="Закон Джоуля - Ленца" textFill="#42e3ba">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="button8" layoutX="338.0" layoutY="290.0" mnemonicParsing="false" onAction="#initialize" prefHeight="39.0" prefWidth="235.0" style="-fx-background-color: #2E3348;" text="Мощность электрического тока" textFill="#42e3ba">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

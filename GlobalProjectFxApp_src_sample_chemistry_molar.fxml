@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.chemistry.Molar">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Exit" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane layoutX="1.0" prefHeight="99.0" prefWidth="630.0" style="-fx-background-color: #2E3348;">
+                    <children>
+                        <Label layoutX="256.0" layoutY="26.0" text="EzLess" textFill="#42e3ba">
+                            <font>
+                                <Font name="Bell MT" size="40.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <Button fx:id="back" layoutX="542.0" layoutY="14.0" mnemonicParsing="false" onAction="#initialize" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #42e3ba; -fx-border-color: silver; -fx-border-radius: 5;" text="Back" textFill="#2e3348">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="add1" layoutX="83.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label layoutX="25.0" layoutY="157.0" prefHeight="30.0" prefWidth="52.0" text="Mr =">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_3" layoutX="132.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="3-4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="add6" layoutX="395.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="add2" layoutX="146.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="add3" layoutX="209.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="add4" layoutX="272.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="add5" layoutX="333.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="add7" layoutX="458.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="add8" layoutX="518.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <Label layoutX="33.0" layoutY="112.0" prefHeight="30.0" prefWidth="93.0" text="Добавить">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_4" disable="true" layoutX="187.0" layoutY="111.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="5-6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="287.0" layoutY="112.0" prefHeight="30.0" prefWidth="50.0" text="поле;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="346.0" layoutY="114.0" prefHeight="30.0" prefWidth="73.0" text="Убрать">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn4" disable="true" layoutX="474.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="5-6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" disable="true" layoutX="419.0" layoutY="111.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="3-4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="571.0" layoutY="112.0" prefHeight="30.0" prefWidth="50.0" text="поле">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="clean" layoutX="253.0" layoutY="201.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="Clean">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="answer" editable="false" layoutX="71.0" layoutY="202.0" prefHeight="32.0" prefWidth="175.0" promptText="Ответ" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="equals" layoutX="30.0" layoutY="203.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="=">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_5" disable="true" layoutX="242.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="7-8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" disable="true" layoutX="527.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 5;" text="7-8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="min0" layoutX="137.0" layoutY="159.0" prefHeight="18.0" prefWidth="5.0" text="·">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="min3" layoutX="511.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="·" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus3" layoutX="447.0" layoutY="159.0" prefHeight="18.0" prefWidth="5.0" text="+" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="min2" layoutX="388.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="·" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus2" layoutX="322.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="+" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="min1" layoutX="263.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="·" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus1" layoutX="197.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="+" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t1" layoutX="83.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="t2" layoutX="146.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="t3" layoutX="209.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="t4" layoutX="272.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="t5" layoutX="333.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="t6" layoutX="395.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="f1" layoutX="83.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="f2" layoutX="146.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="f3" layoutX="209.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="f4" layoutX="272.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="ft1" layoutX="83.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="ft2" layoutX="146.0" layoutY="155.0" prefHeight="32.0" prefWidth="49.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <Label fx:id="min4" layoutX="388.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="·" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus4" layoutX="322.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="+" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="min5" layoutX="263.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="·" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus5" layoutX="197.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="+" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="min7" layoutX="263.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="·" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="plus7" layoutX="197.0" layoutY="160.0" prefHeight="18.0" prefWidth="5.0" text="+" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="250.0" prefHeight="30.0" prefWidth="553.0" text="Относительная молекулярная масса и молярная масса">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="289.0" prefHeight="30.0" prefWidth="553.0" text="вычисляются по одной и той же формуле, различны">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="325.0" prefHeight="30.0" prefWidth="553.0" text="лишь единицы измерения">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
